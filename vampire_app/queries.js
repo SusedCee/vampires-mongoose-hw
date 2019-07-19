@@ -135,6 +135,73 @@ const vampireData = require('./populateVampires.js');
 // 	}
 // });
 
+//FINDING ALL FEMALES
+// Vampire.find({gender: "f"}, (err, Vampires) => {
+// 	console.log(Vampires)
+// })
+
+//EDITING GENDER Marco
+// Vampire.findByIdAndUpdate("5d31dfa8570f4f92e6971df4", {$set: {gender: 'm'}},
+// 	(err, response)=> {
+// 		console.log(response);
+// 	}
+// );
+
+//EDITING GENDER ALEXEI
+// Vampire.findByIdAndUpdate("5d31e0439d502492ebfecd70", {$set: {gender: 'm'}},
+// 	(err, response)=> {
+// 		console.log(response);
+// 	}
+// );
+
+//EDITING GENDER Lan
+// Vampire.findByIdAndUpdate("5d31e0d779e6a492f037b1d1", {$set: {gender: 'f'}},
+// 	(err, response)=> {
+// 		console.log(response);
+// 	}
+// );
+
+//EDITING GENDER Lan
+// Vampire.findByIdAndUpdate("5d31e10d8ba08192f5148965", {$set: {gender: 'f'}},
+// 	(err, response)=> {
+// 		console.log(response);
+// 	}
+// );
+
+//greater than 500 victims
+// Vampire.find({victims: {$gt: 500}}, (err, Vampires) => {
+// 	console.log(Vampires)
+// })
+
+//FEWER OR EQUAL TO 150
+// Vampire.find({victims: {$lte: 150}}, (err, Vampires) => {
+// 	console.log(Vampires)
+// })
+
+//VICTIM NOT EQUAL TO 210234
+// Vampire.find({victims: {$ne: 150}}, (err, Vampires) => {
+// 	console.log(Vampires)
+// })
+
+//VICTIM greater than 150 fewer than 500
+Vampire.find({victims: {$gt: 150, $lt: 500}}, (err, Vampires) => {
+	console.log(Vampires)
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
