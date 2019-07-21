@@ -184,16 +184,60 @@ const vampireData = require('./populateVampires.js');
 // })
 
 //VICTIM greater than 150 fewer than 500
-Vampire.find({victims: {$gt: 150, $lt: 500}}, (err, Vampires) => {
-	console.log(Vampires)
-})
+// Vampire.find({victims: {$gt: 150, $lt: 500}}, (err, Vampires) => {
+// 	console.log(Vampires)
+// })
 
+//VAMPIRES WITH TITLE
+// Vampire.find({ title: {$exists: true}}, (err, vampires) => {
+//         if(err){
+//             console.log(err, "<--err");
+//         } else {
+//             console.log(vampires, "<-- vampire title");
+//         }
+//         mongoose.connection.close();
+//     console.log(vampires)
+// })
 
+//VAMPIRES WITHOUT TITLE
+// Vampire.find({ title: {$exists: false}}, (err, vampires) => {
+//         if(err){
+//             console.log(err, "<--err");
+//         } else {
+//             console.log(vampires, "<-- vampire title");
+//         }
+//         mongoose.connection.close();
+//     console.log(vampires)
+// })
 
+//VAMPIRES WITH TITLE
+// Vampire.find({ 
+// 	title: {$exists: true}, 
+// 	victims: {$exists: false}
+// 	}, (err, vampires) => {
+//         if(err){
+//             console.log(err, "<--err");
+//         } else {
+//         	console.log(vampires, "<-- vampire title and no victims");
+//         }
+//         // mongoose.connection.close();
+//         console.log(vampires);
+// });
 
-
-
-
+//have victims AND the victims they have are greater than 1000
+// Vampire.find({ 
+// 	victims: {$gt: 1000}, 
+// 	victims: {$exists: true}
+// 	}, (err, vampires) => {
+//         if(err){
+//             console.log(err, "<--err");
+//         } else {
+//         	console.log(vampires, "<-- victims higher than 1000");
+        	
+//         }
+//         console.log(vampires);
+//         // mongoose.connection.close();  
+// });
 
 
 
