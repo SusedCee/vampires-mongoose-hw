@@ -274,15 +274,15 @@ const vampireData = require('./populateVampires.js');
 // });
 
 //have red hair or green eyes
-Vampire.find({$or: [{hairColor: "red"}, {eyeColor: "green"}]}, 
-	(err, vampires) => {
-        if(err){
-            console.log(err, "<--err");
-        } else {
-        	console.log(vampires, "<-- red hair, green eyes");	
-        }   
-        console.log(vampires)
-});
+// Vampire.find({$or: [{hairColor: "red"}, {eyeColor: "green"}]}, 
+// 	(err, vampires) => {
+//         if(err){
+//             console.log(err, "<--err");
+//         } else {
+//         	console.log(vampires, "<-- red hair, green eyes");	
+//         }   
+//         console.log(vampires)
+// });
 
 
 
