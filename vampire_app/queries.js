@@ -225,10 +225,10 @@ const vampireData = require('./populateVampires.js');
 // });
 
 //have victims AND the victims they have are greater than 1000
-// Vampire.find({ 
-// 	victims: {$gt: 1000}, 
-// 	victims: {$exists: true}
-// 	}, (err, vampires) => {
+// Vampire.find({$and:
+// 	[{victims: {$gt: 1000}}, 
+// 	{victims: {$exists: true}}
+// 	]}, (err, vampires) => {
 //         if(err){
 //             console.log(err, "<--err");
 //         } else {
@@ -239,12 +239,50 @@ const vampireData = require('./populateVampires.js');
 //         // mongoose.connection.close();  
 // });
 
+//are from New York, New York, US or New Orleans, Louisiana, US
+// Vampire.find({$or: [{location: "New York, New York, US"}, {location: "New Orleans, Louisiana, US"}]}, 
+// 	(err, vampires) => {
+//         if(err){
+//             console.log(err, "<--err");
+//         } else {
+//         	console.log(vampires, "<-- two locations");	
+//         }   
+//         console.log(vampires);   
+// });
 
 
+//love brooding or being tragic-------------------
+// Vampire.find({$or: [{love: "brooding"}, {love: "being tragic"}]}, 
+// 	(err, vampires) => {
+//         if(err){
+//             console.log(err, "<--err");
+//         } else {
+//         	console.log(vampires, "<-- two loves");	
+//         }   
+//         console.log(vampires);
+// });
 
+//have more than 1000 victims or love marshmallows-------------------
+// Vampire.find({$or: [{victims: {$gt: 1000}}, {love: "marshmallows"}]}, 
+// 	(err, vampires) => {
+//         if(err){
+//             console.log(err, "<--err");
+//         } else {
+//         	console.log(vampires, "<-- 1000 and marsh");	
+//         }   
+//         console.log(vampires)
+// });
 
-
-
+//have red hair or green eyes
+Vampire.find({$or: [{hairColor: "red"}, {eyeColor: "green"}]}, 
+	(err, vampires) => {
+        if(err){
+            console.log(err, "<--err");
+        } else {
+        	console.log(vampires, "<-- red hair, green eyes");	
+        }   
+        console.log(vampires)
+});
 
 
 

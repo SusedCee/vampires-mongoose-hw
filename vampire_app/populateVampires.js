@@ -1,8 +1,8 @@
 const vampireData = [
   {
     name: 'Count Chocula',
-    hair_color: 'brown',
-    eye_color: 'brown',
+    hairColor: 'brown',
+    eyeColor: 'brown',
     dob: new Date(1971, 2, 13, 7, 47),
     loves: ['cereal','marshmallows'],
     location: 'Minneapolis, Minnesota, US',
@@ -11,8 +11,8 @@ const vampireData = [
   },{
     name: 'Dracula',
     dob: new Date(937, 0, 24, 13, 0),
-    hair_color: 'brown',
-    eye_color: 'blue',
+    hairColor: 'brown',
+    eyeColor: 'blue',
     loves: ['Winona Ryder', 'top hats', 'fancy cloaks', 'handlebar   mustaches'],
     location: 'Transylvania, Romania',
     gender: 'm',
@@ -20,8 +20,8 @@ const vampireData = [
   },{
     name: 'Elizabeth Bathory ',
     dob: new Date(1560, 8, 7, 22, 10),
-    hair_color: 'brown',
-    eye_color: 'brown',
+    hairColor: 'brown',
+    eyeColor: 'brown',
     loves: ['virgin blood', 'fancy cloaks','frilly collars'],
     location: 'Nyírbátor, Hungary',
     gender: 'f',
@@ -29,8 +29,8 @@ const vampireData = [
   },{
     name: 'Lestat',
     dob: new Date(1760, 11, 9, 18, 44),
-    hair_color: 'blonde',
-    eye_color: 'blue',
+    hairColor: 'blonde',
+    eyeColor: 'blue',
     loves: ['frilly shirtsleeves', 'frilly collars', 'lurking in   rotting mansions', 'Louis'],
     location: 'Auvergne, France',
     gender: 'm',
@@ -38,8 +38,8 @@ const vampireData = [
   },{
     name: 'Louis de Pointe du Lac',
     dob: new Date(1766, 6, 4, 2, 1),
-    hair_color: 'brown',
-    eye_color: 'blue',
+    hairColor: 'brown',
+    eyeColor: 'blue',
     loves:['brooding', 'Claudia', 'staring longingly into the   distance'],
     location: 'New Orleans, Louisiana, US',
     gender:'m',
@@ -47,8 +47,8 @@ const vampireData = [
   },{
     name:'Claudia',
     dob: new Date(1793, 2, 7, 8, 30),
-    hair_color: 'blonde',
-    eye_color: 'blue',
+    hairColor: 'blonde',
+    eyeColor: 'blue',
     loves: ['doll babies', 'ribbons', 'appearing innocent', '  trickery'],
     location: 'New Orleans, Louisiana, US',
     gender: 'f',
@@ -56,8 +56,8 @@ const vampireData = [
   },{
     name:'Armand',
     dob: new Date(1481, 6, 1, 10, 42),
-    hair_color: 'red',
-    eye_color: 'brown',
+    hairColor: 'red',
+    eyeColor: 'brown',
     loves: ['theatre', 'painting', 'velvet robes', 'being tragic'],
     location: 'Kiev, Russia',
     gender: 'm',
@@ -65,8 +65,8 @@ const vampireData = [
   },{
     name:'Santino',
     dob: new Date(1465, 6, 1, 10, 42),
-    hair_color: 'brown',
-    eye_color: 'brown',
+    hairColor: 'brown',
+    eyeColor: 'brown',
     loves: ['trickery', 'vampiric cults', 'fancy cloaks'],
     location: 'Rome, Italy',
     gender: 'm',
@@ -74,8 +74,8 @@ const vampireData = [
   },{
     name:'Akasha',
     dob: new Date(-8000, 6, 1, 10, 42),
-    hair_color: 'brown',
-    eye_color: 'green',
+    hairColor: 'brown',
+    eyeColor: 'green',
     loves: ['eating hearts', 'bathing in roses', 'elaborate   headdresses', 'R&B music'],
     location: 'Kemet, Egypt',
     gender: 'f',
@@ -84,16 +84,16 @@ const vampireData = [
   },{
     name: 'Edward Cullen',
     dob: new Date(1901, 6, 20, 0, 57),
-    hair_color: 'brown',
-    eye_color: 'brown',
+    hairColor: 'brown',
+    eyeColor: 'brown',
     loves: ['brooding', 'diamond skin', 'calling people spider   monkeys'],
     location: 'Chicago, Illinois, US',
     gender: 'm',
   },{
     name: 'Persephone Bourignon',
     dob: new Date(1801, 5, 17, 14, 53),
-    hair_color: 'red',
-    eye_color: 'green',
+    hairColor: 'red',
+    eyeColor: 'green',
     loves: ['wine', 'fancy cloaks', 'appearing innocent'],
     location: 'Paris, France',
     gender: 'f',
@@ -101,16 +101,16 @@ const vampireData = [
   },{
     name: 'René Tremblay',
     dob: new Date(1922, 2, 8, 5, 3),
-    hair_color: 'brown',
-    eye_color: 'green',
+    hairColor: 'brown',
+    eyeColor: 'green',
     loves: ['frilly shirtsleeves', 'trickery', 'card games'],
     location: 'Bucharest, Romania',
     gender: 'm',
     victims: 134
   },{
     name: 'Caroline Belmont',
-    hair_color: 'blonde',
-    eye_color: 'brown',
+    hairColor: 'blonde',
+    eyeColor: 'brown',
     dob: new Date(1799, 4, 21, 16, 15),
     loves: ['marshmallows', 'ribbons', 'being tragic'],
     location: 'Ljubljana, Slovenia',
@@ -118,8 +118,8 @@ const vampireData = [
     victims: 567
   },{
     name: 'Francis Frost',
-    hair_color: 'black',
-    eye_color: 'blue',
+    hairColor: 'black',
+    eyeColor: 'blue',
     dob: new Date(1976, 6, 18, 18, 18),
     loves: ['brooding', 'frilly shirtsleeves'],
     location: 'New York, New York, US',
@@ -127,8 +127,8 @@ const vampireData = [
     victims: 112
   },{
     name: 'Barnabas Spenser',
-    hair_color: 'brown',
-    eye_color: 'brown',
+    hairColor: 'brown',
+    eyeColor: 'brown',
     dob: new Date(1984, 6, 3, 13, 12),
     loves: ['being merry', 'being insane', 'card games'],
     location: 'New York, New York, US',
